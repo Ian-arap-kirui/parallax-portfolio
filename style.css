@@ -24,6 +24,7 @@ a {
   color: #333;
   font-size: 40vw;
   cursor: default;
+  margin-left: 25px;
 }
 .saluteImgContainer {
   flex: 1;
@@ -244,53 +245,19 @@ a {
 .socialTxt {
   color: #555;
 }
+.txt {
+  margin-top: 1em;
+  font-size: 25px;
+  font-weight: 600;
+  color: #555;
+}
 .icons {
   display: flex;
-  position: relative;
-}
-.glassIcon {
-  --width: 100px;
-  width: var(--width);
-  height: var(--width);
-  color: #fff;
-  font-size: 35px;
-  border-radius: 5px;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(2px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-right-color: 1px solid rgba(255, 255, 255, 0.1);
-  border-bottom-color: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
-  text-decoration: none;
-  margin: 20px;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
+  margin: 3em 0;
   align-items: center;
-}
-.glassIcon,
-.glassIcon * {
-  box-sizing: border-box;
-  transition: 200ms;
-}
-.glassIcon::before {
-  content: "";
-  position: absolute;
-  display: block;
   width: 50%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.05);
-  filter: blur(0px);
-  transition: 400ms;
-  transform: skewX(45deg) translateX(calc(var(--width)+50%));
+  justify-content: space-evenly;
 }
-.glassIcon:hover {
-  transform: translateY(-20px);
-}
-
-.glassIcon:hover::before {
-  transform: skewX(45deg) translateX(calc(var(--width) * -1 -50%));
-}
-.glassIcon > * {
-  opacity: 0.8;
+.icon {
+  color: #a7a7a7;
 }
